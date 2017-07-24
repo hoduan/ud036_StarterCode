@@ -1,14 +1,12 @@
 import webbrowser
 
+
 class Movie():
-	'''This class defines a movie prototype'''
+    '''This class defines a movie prototype'''
+    def __init__(self, title, storyline, poster_img, youtube_url):
+        self.title = title
+        self.movie_storyline = storyline
+        self.poster_image_url = poster_img
+        self.trailer_youtube_url = youtube_url
 
-	def __init__(self, movie_title, movie_storyline, movie_poster_img, movie_youtube_url):
-			self.title = movie_title
-			self.movie_storyline = movie_storyline
-			self.poster_image_url = movie_poster_img
-			self.trailer_youtube_url = movie_youtube_url
 
-
-	def paly_trailer(self):
-			webbrowser.open(self.trailer_youtube_url)
